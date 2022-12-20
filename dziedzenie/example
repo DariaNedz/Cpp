@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+class A {
+  public:
+    float x = 2.5;
+};
+
+class B : public A
+{
+public:
+    int f(float x) {
+        cout << x << endl;
+        return x;
+    }
+};
+
+int main() {
+    
+    B Point;
+    Point.f(Point.x); 
+    return 0;
+}
